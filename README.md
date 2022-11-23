@@ -1,7 +1,7 @@
 # community_detection
 
 
-data_science_main.ipynb 是執行的地方 <>
+data_science_main.ipynb 是執行的地方  
 dataset我沒有放上去，要記得放在同一個資料夾中
 
 2022/11/24(四) 陳學義 
