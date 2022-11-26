@@ -1,6 +1,8 @@
 # community_detection
 ### DDL: 2022/12/15
 
+參考筆記: https://hackmd.io/0nC3zkwVRDi2cn18jJPA0g
+
 data_science_main.ipynb 是執行的地方  
 dataset我沒有放上去，要記得放在同一個資料夾中
 
