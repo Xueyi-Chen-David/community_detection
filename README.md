@@ -19,6 +19,7 @@ dataset我沒有放上去，要記得放在同一個資料夾中
 盛浩
 1. Louvain 算法 - 了解一下，看看能不能實作
 2. 針對目前的feature做特徵選擇
+3. 蒐集graph資訊，degree、朋友跟朋友的相似度...當成features進行 machine learning
 
 
 2022/12/1(四) - 討論
