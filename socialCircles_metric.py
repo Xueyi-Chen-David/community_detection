@@ -42,7 +42,7 @@ def loss1(usersPerCircle, usersPerCircleP):
     return int(editCost)
 
 if len(sys.argv) != 3:
-  print "Expected two arguments (ground-truth and prediction filenames)"
+  print("Expected two arguments (ground-truth and prediction filenames)")
   sys.exit(0)
 
 groundtruthFile = sys.argv[1] # Ground-truth
@@ -62,7 +62,7 @@ gf.close()
 pf.close()
 
 if len(gLines) != len(pLines):
-  print "Ground-truth and prediction files should have the same number of lines"
+  print("Ground-truth and prediction files should have the same number of lines")
   sys.exit(0)
 
 circlesG = {}
@@ -75,11 +75,11 @@ for gl, pl in zip(gLines, pLines):
 
 totalLoss = 0
 for k in circlesP.keys():
-  if not circlesG.has_key(k):
-    print "Ground-truth has prediction for circle", k, "but prediction does not"
+  if k not in circlesG:
+    print("Ground-truth has prediction for circle", k, "but prediction does not")
     sys.exit(0)
   l = loss1(circlesG[k], circlesP[k])
-  print "loss for user", k, "=", l
+  print("loss for user", k, "=", l)
   totalLoss += l
 
-print "total loss for all users =", totalLoss
+print("total loss for all users =", totalLoss)
