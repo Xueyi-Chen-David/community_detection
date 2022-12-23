@@ -60,3 +60,18 @@ class data_preprocess():
 
             fin.append(temp)
         return fin
+    
+    def edge_data(self, index):
+        node, head = [], []
+        for line in open(self.target_dir + "\\" + self.files[index]):
+            e1, es = line.split(':')
+            es = es.split()
+            for e in es:
+                if e == e1: continue
+                node.append((int(e1),int(e)))
+            head.append(e1)
+                         
+        e1 = re.sub('\D', '', self.files[index])
+        for e in head:
+            node.append((int(e1),int(e)))
+        return node
