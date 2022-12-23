@@ -23,7 +23,7 @@ class data_preprocess():
                     temp += f.readlines()
             self.data.append(temp)
     
-    def train_data(self):
+    def train_data(self): # for training data
         self.__read_file()
         train = []
         for i in range(len(self.data)):
@@ -46,7 +46,7 @@ class data_preprocess():
             
         return train, final
     
-    def ego_data(self):
+    def ego_data(self): # for ego data
         self.__read_file()
         
         fin = []
