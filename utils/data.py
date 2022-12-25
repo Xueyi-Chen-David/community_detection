@@ -49,17 +49,19 @@ class data_preprocess():
     def ego_data(self): # for ego data
         self.__read_file()
         
-        fin = []
+        fin, user = [], []
 
         for j in range(len(self.data)):
-            temp = []
+            temp, temp2 = [], []
 
             for i in range(len(self.data[j])):
-                a = self.data[j][i].replace(":", '').split()
+                u, a = self.data[j][i].split(":")
+                a = a.split()
                 temp.append([int(a[i]) for i in range(len(a))])
-
+                temp2.append(int(u))
             fin.append(temp)
-        return fin
+            user.append(temp2)
+        return fin, user
     
     def edge_data(self, index):
         node, head = [], []
