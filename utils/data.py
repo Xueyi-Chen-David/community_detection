@@ -56,7 +56,7 @@ class data_preprocess():
 
             for i in range(len(self.data[j])):
                 u, a = self.data[j][i].split(":")
-                a = a.split()
+                a = self.data[j][i].replace(":", '').split()
                 temp.append([int(a[i]) for i in range(len(a))])
                 temp2.append(int(u))
             fin.append(temp)
