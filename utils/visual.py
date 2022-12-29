@@ -25,9 +25,9 @@ def draw(egonet_file):
         node.append(e1)
         
     # for ego user's friends
-    e1 = re.sub('\D', '', egonet_file.split('\\')[-1])
-    for e in node:
-        G.add_edge(int(e1),int(e))
+#     e1 = re.sub('\D', '', egonet_file.split('\\')[-1])
+#     for e in node:
+#         G.add_edge(int(e1),int(e))
         
     return G
 
