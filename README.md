@@ -3,7 +3,7 @@
 
 參考筆記: https://hackmd.io/0nC3zkwVRDi2cn18jJPA0g
 
-* main1.ipynb 是最終的檔案
+* main1.ipynb 是主要的程式碼
 * dataset我沒有放上去，要記得放在同一個資料夾中
 
 2022/11/24(四) 陳學義 
