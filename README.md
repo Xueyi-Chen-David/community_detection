@@ -1,10 +1,10 @@
 # community_detection
-### DDL: 2022/12/15
+### DDL: 2023/1/5
 
 參考筆記: https://hackmd.io/0nC3zkwVRDi2cn18jJPA0g
 
-data_science_main.ipynb 是執行的地方  
-dataset我沒有放上去，要記得放在同一個資料夾中
+* main1.ipynb 是最終的檔案
+* dataset我沒有放上去，要記得放在同一個資料夾中
 
 2022/11/24(四) 陳學義 
 - 目前正在做的是: 視覺化(順便而已)、將 data 處理成可以餵進 GNN 的格式
@@ -20,6 +20,3 @@ dataset我沒有放上去，要記得放在同一個資料夾中
 1. Louvain 算法 - 了解一下，看看能不能實作
 2. 針對目前的feature做特徵選擇
 3. 蒐集graph資訊，degree、朋友跟朋友的相似度...當成features進行 machine learning
-
-
-2022/12/1(四) - 討論
